@@ -6,6 +6,7 @@ import Message from "@/components/Message";
 const Messages = () => {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const getMessages = async () => {
       try {

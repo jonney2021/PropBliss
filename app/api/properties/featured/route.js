@@ -7,7 +7,7 @@ export const GET = async (request) => {
     await connectDB();
 
     const properties = await Property.find({
-      is_featured: true,
+      is_Featured: true,
     });
 
     return new Response(JSON.stringify(properties), {

@@ -9,7 +9,7 @@ export const GET = async () => {
   try {
     await connectDB();
     const sessionUser = await getSessionUser();
-    if (!sessionUser || sessionUser.user) {
+    if (!sessionUser || !sessionUser.user) {
       return new Response("User ID is required", {
         status: 401,
       });
@@ -20,7 +20,7 @@ export const GET = async () => {
     const readMessages = await Message.find({ recipient: userId, read: true })
       .sort({ createdAt: -1 }) // Sort read messages in asc order
       .populate("sender", "username")
-      .populate("poperty", "name");
+      .populate("property", "name");
 
     const unreadMessages = await Message.find({
       recipient: userId,
@@ -28,7 +28,7 @@ export const GET = async () => {
     })
       .sort({ createdAt: -1 }) // Sort read messages in asc order
       .populate("sender", "username")
-      .populate("poperty", "name");
+      .populate("property", "name");
 
     const messages = [...unreadMessages, ...readMessages];
 
@@ -48,7 +48,7 @@ export const POST = async (request) => {
       await request.json();
 
     const sessionUser = await getSessionUser();
-    if (!sessionUser || sessionUser.user) {
+    if (!sessionUser || !sessionUser.user) {
       return new Response("You must be logged in to send a message", {
         status: 401,
       });
