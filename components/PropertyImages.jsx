@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Gallery, Item } from "react-photoswipe-gallery";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 const PropertyImages = ({ images }) => {
   return (

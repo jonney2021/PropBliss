@@ -76,7 +76,7 @@ const Message = ({ message }) => {
         </li>
         <li>
           <strong>Reply Phone:</strong>{" "}
-          <a href={`${message.phone}`} className="text-blue-500">
+          <a href={`tel:${message.phone}`} className="text-blue-500">
             {message.phone}
           </a>
         </li>

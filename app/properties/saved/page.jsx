@@ -29,7 +29,6 @@ const SavedPropertiesPage = () => {
     fetchSavedProperties();
   }, []);
 
-  console.log(properties);
   return loading ? (
     <Spinner loading={loading} />
   ) : (

@@ -120,7 +120,7 @@ export const PUT = async (request, { params }) => {
     // Update property in databse
     const updatedProperty = await Property.findByIdAndUpdate(id, propertyData);
 
-    console.log(propertyData);
+    // console.log(propertyData);
     return new Response(JSON.stringify(updatedProperty), {
       status: 200,
     });
