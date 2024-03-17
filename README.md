@@ -1,4 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a property rental website bulit in Next.js 14.
+
+The project has the following features:
+
+User authentication with Google & Next Auth
+
+User authorization
+
+RESTful API routes
+
+Route protection
+
+User profile with user listings
+
+Property Listing CRUD
+
+Property image upload (Multiple)
+
+Cloudinary integration
+
+Property search
+
+Internal messages with 'unread' notifications
+
+Photoswipe image gallery
+
+Mapbox maps
+
+Toast notifications
+
+Property bookmarking / saved properties
+
+Property sharing to social media
+
+Loading spinners
+
+Responsive design (Tailwind)
+
+Custom 404 page
 
 ## Getting Started
 
