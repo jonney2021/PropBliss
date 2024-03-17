@@ -1,4 +1,4 @@
-This is a property rental website bulit in Next.js 14.
+## This is a property rental website bulit in Next.js 14.
 
 The project has the following features:
 
